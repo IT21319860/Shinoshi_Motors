@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shinoshi Motors</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="antialiased selection:bg-pink-500 selection:text-white pt-20">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <span class="text-3xl font-extrabold tracking-tight text-white">SHINOSHI<span
+                                class="text-gradient">.</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="inventory.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Inventory</a>
+                        <a href="about.html"
+                            class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-pink-500 transition-colors border-b-2 border-pink-500">About
+                            Us</a>
+                        <a href="contact.html"
+                            class="bg-gradient-btn text-white px-6 py-2.5 rounded-full text-sm font-semibold tracking-wide shadow-lg shadow-pink-500/30">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden glass" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="inventory.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inventory</a>
+                <a href="about.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="contact.html" class="text-pink-500 font-bold block px-3 py-2 rounded-md text-base">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="min-h-[80vh] py-20 relative">
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-900/20 to-transparent z-0 pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+                <div class="scroll-animate">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">Driven by <span
+                            class="text-gradient">Passion</span></h1>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Sakun Malaka who has been the owner and founder of <strong class="text-white">Shinoshi
+                            Motors</strong> and
+                        located in the heart of Kattuwa, <strong class="text-white">Shinoshi Motors</strong> is the
+                        leading dealership for premium used scooters and motorbikes. We believe that everyone deserves a
+                        reliable, stylish, and high-quality ride without the brand-new price tag.
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8 leading-relaxed">
+                        We specialize in meticulously inspected, top-condition scooters including Honda Dio, Yamaha
+                        Ray-ZR, and every type of motorbike. Every bike that enters our showroom is checked by expert
+                        mechanics to ensure peak performance. That's the Shinoshi guarantee.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="glass p-4 rounded-xl text-center flex-1 border-pink-500/30">
+                            <h4 class="text-3xl font-extrabold text-white mb-1">3+</h4>
+                            <p class="text-xs text-pink-400 uppercase tracking-widest font-bold">Years Experience</p>
+                        </div>
+                        <div class="glass p-4 rounded-xl text-center flex-1 border-purple-500/30">
+                            <h4 class="text-3xl font-extrabold text-white mb-1">500+</h4>
+                            <p class="text-xs text-purple-400 uppercase tracking-widest font-bold">Happy Riders</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative scroll-animate delay-200">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-pink-500 to-purple-600 rounded-3xl transform rotate-3 blur-sm opacity-50">
+                    </div>
+                    <div class="glass rounded-3xl overflow-hidden relative z-10 p-2">
+                        <img src="images/hero.png" alt="Our Showroom" class="rounded-2xl w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <span class="text-2xl font-extrabold tracking-tight text-white mb-4 block">SHINOSHI MOTORS<span
+                            class="text-pink-500">.</span></span>
+                    <p class="text-gray-400 text-sm">Premium used motorbikes and scooters in Kattuwa. Finding your dream
+                        ride has never been easier.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-pink-500 transition-colors text-sm">Home</a></li>
+                        <li><a href="inventory.html"
+                                class="text-gray-400 hover:text-pink-500 transition-colors text-sm">Inventory</a></li>
+                        <li><a href="about.html"
+                                class="text-gray-400 hover:text-pink-500 transition-colors text-sm">About Us</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-pink-500 transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">Visit Us</h3>
+                    <address class="text-gray-400 text-sm not-italic space-y-2">
+                        <p>Shinoshi Motors</p>
+                        <p>Main Road, Kattuwa</p>
+                        <p>Sri Lanka</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2026 Shinoshi Motors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
